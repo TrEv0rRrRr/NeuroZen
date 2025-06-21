@@ -42,7 +42,7 @@ function ingresoUsuario() {
         }
 
         window.location.href =
-          "./index.html?user=" + correoAct.substring(0, correoAct.indexOf("@"));
+          "../index.html?user=" + correoAct.substring(0, correoAct.indexOf("@"));
       });
   }
 }
@@ -71,6 +71,6 @@ function registroUsuario() {
     alert("Se registró correctamente");
     let correoAct = document.getElementById("correo").value;
     window.location.href =
-      "./index.html?user=" + correoAct.substring(0, correoAct.indexOf("@"));
+      "../index.html?user=" + correoAct.substring(0, correoAct.indexOf("@"));
   }
 }
