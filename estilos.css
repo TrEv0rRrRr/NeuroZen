@@ -34,7 +34,7 @@ body {
       rgba(142, 253, 169, 0.486) 0%,
       hsla(138, 68%, 79%, 0.714) 100%
     ),
-    url(../../img/woman.jpg);
+    url("./img/woman.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
