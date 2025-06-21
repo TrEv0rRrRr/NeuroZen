@@ -1,0 +1,498 @@
+/* Fuentes */
+
+.nunito-sans,
+h1,
+h2,
+h5 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.1em;
+}
+
+.inika,
+p,
+button,
+input,
+span {
+  text-align: justify;
+  font-family: "Inika", serif;
+  line-height: 1.1em;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Títulos (h1, h2, h3, etc) */
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 10px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 36px;
+}
+
+h5 {
+  text-align: center;
+  font-size: 24px;
+}
+
+/* Texto por defecto */
+
+p {
+  font-size: 20px;
+}
+
+.p-normal {
+  font-size: 18px;
+}
+
+span {
+  font-size: 16px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+a {
+  color: inherit;
+}
+
+a:link {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+/* Botones */
+
+button {
+  border: 0;
+  border-radius: 20px;
+  font-size: 12px;
+  padding: 1em 2em;
+}
+
+.boton-verde {
+  background-color: #2cb15f;
+  box-shadow: 0 0 30px 0 #333;
+  text-decoration: none;
+  color: rgb(39, 58, 50);
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.boton-verde:hover {
+  font-size: 14px;
+  transition: all 1s ease;
+}
+
+.contenedor-boton-dinamico {
+  display: flex;
+  background-color: red;
+}
+
+.boton-azul {
+  background-color: #3e8b5e;
+  color: white;
+  box-shadow: 0 0 30px 0 #333;
+}
+
+.boton-azul:hover {
+  font-size: 14px;
+  transition: all 1s ease;
+}
+
+.boton-usuario {
+  background-color: #3af634;
+}
+
+/* Header Fijo */
+
+header {
+  background: #aaddc4;
+  color: white;
+  padding: 29px 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 5000;
+}
+
+.logo-link:hover {
+  width: 70px;
+  height: 70px;
+  margin: 15px;
+  transition: all 1s ease;
+}
+
+/* Algunas reglas para mejorar la parte visual de la página */
+
+body {
+  background: radial-gradient(#eee, #bad4b5);
+  color: black;
+}
+
+main {
+  margin-top: 162px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Reglas usadas en el header */
+
+.logo-nav-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navigation ul {
+  margin: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/* Secciones */
+
+.seccion {
+  height: 86vh;
+}
+
+.seccion-inicio {
+  color: black;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.div-seccion {
+  width: 30%;
+}
+
+.contenedor-inicio {
+  left: 0;
+  right: 0;
+  padding-left: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.contenedor-inicio div {
+  left: 0;
+  padding-right: 10%;
+  align-items: center;
+  width: 50%;
+}
+
+.contenedor-inicio div h1 {
+  padding: 0;
+  text-align: justify;
+}
+
+.home-img-container {
+  width: 65%;
+  display: inline-block;
+}
+
+.home-img-container img {
+  width: 60vw;
+  height: 76vh;
+}
+
+.nosotros-section-container {
+  display: flex;
+}
+
+.nosotros-text-container {
+  background: #333;
+  color: #ddd;
+  margin: 10px 50px;
+  border-radius: 50px;
+  box-shadow: 0 0 20px 0 #333;
+  display: inline-block;
+  width: 30%;
+  padding: 0 60px;
+  transition: all 1s ease;
+}
+
+.nosotros-text-container:hover {
+  transform: scale(1.04);
+}
+
+.div-centro {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/*       Comunidad       */
+
+.comunidad-section-container {
+  display: grid;
+  grid-template-areas:
+    "A B C"
+    "D E F"
+    "button button button";
+  gap: 15px;
+  box-sizing: border-box;
+  margin: 10px 20px;
+}
+
+.comunidad-text-container {
+  box-sizing: content-box;
+  border-radius: 20px;
+  padding: 0 10px;
+  margin: 10px;
+  box-shadow: 0 0 10px 0 #eee;
+  transition: all 1s ease;
+}
+
+.verde {
+  background: linear-gradient(#21d767, #2cb15f);
+}
+
+.azul {
+  background: linear-gradient(#4f42bd, #4734f6);
+  color: white;
+}
+
+.comunidad-text-container:hover {
+  transform: scale(1.08);
+}
+
+.p-centrado-small {
+  text-align: center;
+  font-size: 14px;
+}
+
+.div-comunidad-boton {
+  float: right;
+  width: 11%;
+}
+
+/*     Servicios     */
+
+.map {
+  height: 370px;
+  width: 60%;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 0 black;
+  outline: transparent;
+}
+
+.contenedor-mapa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.control-mapa {
+  margin-left: 100px;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  border-radius: 25px;
+}
+
+.titulo-mapa {
+  color: #eee;
+  margin-bottom: 30px;
+  font-size: 26px;
+}
+
+.label-mapa {
+  text-align: center;
+  color: #eee;
+}
+
+.input-mapa {
+  width: 90%;
+  font-size: 16px;
+  margin: 10px 0;
+  padding: 5px;
+  background: transparent;
+  color: #eee;
+  border: none;
+  border-bottom: 1px solid;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  transition: all 0.1s ease;
+}
+
+.boton-mapa {
+  margin: 20px 0;
+  padding: 8px 20px;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.input-mapa:hover {
+  background-color: #aaa2;
+}
+
+.input-mapa:focus {
+  border-bottom-width: 2px;
+  font-size: 18px;
+}
+
+.input-mapa:focus-visible {
+  outline: none;
+}
+
+/* Forms */
+
+.seccion-login {
+  background-image: url(../../img/Galeria/seis.jpg);
+  background-size: cover;
+  height: 100vh;
+  opacity: 75%;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem 2.2rem;
+  background: linear-gradient(#cbf7b9, #ddd);
+  border-radius: 30px;
+  box-shadow: 0 0 30px 0 #3e5f41;
+}
+
+.link-regresar {
+  height: 100px;
+  width: 100px;
+  background-color: #b4eba7;
+  justify-self: first baseline;
+  margin-left: 100px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 30px 0 #7ee794;
+}
+
+.link-regresar img {
+  width: 80px;
+  transition: all 0.5s;
+}
+
+.link-regresar img:hover {
+  transform: scale(0.9);
+}
+
+.form-login h1 {
+  padding: 0;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.7rem;
+}
+
+.label-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.label-login {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  font-weight: bold;
+  width: 100%;
+}
+
+.label-login input {
+  width: 95%;
+  padding: 7px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #335337;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.label-login input:focus {
+  transform: scale(1.02);
+}
+
+.boton-login {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #34f644;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.boton-login:hover {
+  background-color: #26b932;
+  transform: scale(0.9);
+}
+
+.sesion-usuario a {
+  text-align: center;
+  font-size: 22px;
+  margin: 20px 10px 10px 10px;
+}
+
+.sesion-usuario a:hover {
+  text-decoration: underline;
+}
+
+.texto-espaciado {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-form {
+  color: #2cb15f;
+}
+
+.link-form:visited {
+  color: #186e39;
+}
+
+.link-form:hover {
+  color: #2cb15fb9;
+  text-decoration: underline;
+}
+
+.button-link-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin-top: 1rem;
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeuroZen | Gestiona tu estrés y bienestar emocional</title>
+    <meta
+      name="description"
+      content="NeuroZen es una plataforma que te ayuda a detectar y reducir el estrés laboral con tests, ejercicios personalizados y acceso a psicólogos calificados."
+    />
+    <meta
+      name="keywords"
+      content="estrés, bienestar, salud mental, neurozen, psicología, plataforma, test, relajación, emocional"
+    />
+    <meta name="author" content="NeuroDraw" />
+    <link rel="stylesheet" href="./styles/estilos.css" />
+    <link rel="icon" href="../img/favicon.png" sizes="32x32" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header" id="inicio">
+      <img class="neurozen-logo" src="../img/Logo.png" alt="Logo de NeuroZen" />
+      <img
+        class="hamburger-icon"
+        src="../img/Icons/hamburguesa.svg"
+        alt="Abrir menú"
+      />
+
+      <nav class="menu">
+        <a class="menu_link" href="#inicio">Inicio</a>
+        <a class="menu_link" href="#servicio">Beneficios</a>
+        <a class="menu_link" href="#galeria">Ejercicios</a>
+        <a class="menu_link" href="#expertos">Expertos en:</a>
+        <a class="menu_link" href="#psicologos">Nuestros mejores psicólogos</a>
+        <a class="menu_link" href="#footer">Contacto</a>
+      </nav>
+
+      <div class="contenedor head">
+        <div>
+          <h1 class="titulo">N E U R O Z E N</h1>
+          <p class="copy">Transformamos tu estrés en algo mejor</p>
+        </div>
+
+        <div id="header-btn-cont">
+          <div id="contenedor-boton-dinamico"></div>
+          <a href="./test.html" class="boton-verde">Realizar test de prueba</a>
+          <a href="./registro.html" class="boton-verde">Unirse</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="contenedor" id="servicio">
+        <h2 class="subtitulo">Beneficios que ofrecemos</h2>
+
+        <div class="contenedor-servicio">
+          <img
+            src="../img/Gifs/comienzo.gif"
+            alt="Ilustración de mujer meditando con cactus y celular al lado"
+          />
+
+          <ul class="checklist-servicio">
+            <li class="service">
+              <h3 class="service__title">
+                <span class="number">1</span>Recomendaciones
+              </h3>
+              <p>
+                Mejora tu bienestar con recomendaciones adaptadas a tu nivel de
+                estrés.
+              </p>
+            </li>
+
+            <li class="service">
+              <h3 class="service__title">
+                <span class="number">2</span>Agenda
+              </h3>
+              <p>
+                Agenda citas fácilmente con profesionales certificados para
+                tener un mejor asesoramiento.
+              </p>
+            </li>
+
+            <li class="service">
+              <h3 class="service__title">
+                <span class="number">3</span>Bienestar
+              </h3>
+              <p>
+                Prioriza tu bienestar con herramientas accesibles y efectivas.
+                Descubre ejercicios prácticos de meditación y respiración.
+                Monitorea tu bienestar y observa mejoras en tiempo real.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="gallery" id="galeria">
+        <div class="contenedor">
+          <h2 class="subtitulo">Ejercicios contra el estrés</h2>
+
+          <div class="contenedor-galeria">
+            <img
+              src="../img/Galeria/uno.jpg"
+              class="img-galeria"
+              alt="Mujer meditando en un campo al atardecer"
+            />
+            <img
+              src="../img/Galeria/dos.jpg"
+              class="img-galeria"
+              alt="Pareja corriendo por un sendero al sol de la mañana"
+            />
+            <img
+              src="../img/Galeria/tres.jpg"
+              class="img-galeria"
+              alt="Grupo de personas haciendo ejercicios al aire libre"
+            />
+            <img
+              src="../img/Galeria/cuatro.jpg"
+              class="img-galeria"
+              alt="Hombre relajándose escuchando música con auriculares"
+            />
+            <img
+              src="../img/Galeria/cinco.jpg"
+              class="img-galeria"
+              alt="Persona leyendo un libro cómodamente sentada"
+            />
+            <img
+              src="../img/Galeria/seis.jpg"
+              class="img-galeria"
+              alt="Grupo de personas tomadas de la mano en un parque con luz natural"
+            />
+          </div>
+        </div>
+      </section>
+
+      <div class="imagen-light">
+        <img src="../img/Icons/close.svg" alt="Cerrar imagen" class="close" />
+        <img
+          src=""
+          alt="Vista ampliada de imagen de la galería"
+          class="agregar-imagen"
+        />
+      </div>
+
+      <section class="contenedor" id="expertos">
+        <h2 class="subtitulo">Expertos en:</h2>
+        <div class="experts">
+          <div class="cont-expert">
+            <img
+              src="../img/Gifs/test.gif"
+              alt="Ícono de persona con auriculares completando un test"
+            />
+            <h3 class="n-expert">Test de estrés</h3>
+          </div>
+          <div class="cont-expert">
+            <img
+              src="../img/Gifs/liberacion.gif"
+              alt="Ilustración de persona meditando rodeada de objetos relajantes y monedas"
+            />
+            <h3 class="n-expert">Liberación de estrés</h3>
+          </div>
+          <div class="cont-expert">
+            <img
+              src="../img/contacto.jpg"
+              alt="Ícono de asesora con auriculares brindando atención profesional"
+            />
+            <h3 class="n-expert">Contacto Profesional</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="contenedor section-psicologos" id="psicologos">
+        <div class="section-title">
+          <h2 class="subtitulo">Nuestros mejores psicólogos</h2>
+          <p>
+            Profesionales certificados listos para ayudarte a reducir el estrés,
+            mejorar tu bienestar emocional y recuperar tu equilibrio.
+          </p>
+        </div>
+        <div id="galeria-psico"></div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="contenedor footer-content">
+        <div class="contact-us">
+          <h2 class="brand">NEUROZEN</h2>
+          <p>Expertos en quitarte el estrés.</p>
+        </div>
+        <div class="social-media">
+          <a href="./" class="social-media-icon" aria-label="Facebook">
+            <i class="bx bxl-facebook"></i>
+          </a>
+          <a href="./" class="social-media-icon" aria-label="Twitter">
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a href="./" class="social-media-icon" aria-label="Instagram">
+            <i class="bx bxl-instagram"></i>
+          </a>
+        </div>
+      </div>
+      <hr class="line" />
+    </footer>
+
+    <script src="../js/menu.js"></script>
+    <script src="../js/lightbox.js"></script>
+    <script src="../js/manipulacionDOM.js"></script>
+    <script src="../js/validacionesForm.js"></script>
+    <script src="../js/psicologos.js"></script>
+  </body>
+</html>

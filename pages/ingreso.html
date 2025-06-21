@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>NeuroZen App - Ingreso</title>
+    <meta charset="UTF-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+
+  <body>
+    <div class="seccion-login">
+      <div class="link-regresar">
+        <a href="./index.html"><img src="../img/Logo.png" alt="logo" /></a>
+      </div>
+
+      <div class="div-centro">
+        <div class="sesion-usuario">
+          <form action="" method="get" class="form-login" id="formLogin">
+            <h1>Ingresa a tu cuenta de NeuroZen</h1>
+            <div class="label-container">
+              <label class="label-login">
+                Correo
+                <input
+                  type="email"
+                  name="correo"
+                  onfocus="this.select()"
+                  id="correo"
+                  required
+                />
+              </label>
+              <label class="label-login">
+                Contraseña
+                <input
+                  type="password"
+                  name="password"
+                  onfocus="this.select()"
+                  id="password"
+                  required
+                />
+              </label>
+            </div>
+
+            <div class="button-link-container">
+              <button
+                class="boton-login"
+                type="button"
+                id="submit"
+                onclick="ingresoUsuario()"
+              >
+                Ingresar
+              </button>
+              <div class="link-container">
+                <a href="#" class="link-form"> ¿Olvidaste tu contraseña? </a>
+                <p id="registrar">
+                  ¿No tienes cuenta?
+                  <a href="registro.html" class="link-form">Regístrate</a>
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/manipulacionDOM.js"></script>
+    <script src="../js/validacionesForm.js"></script>
+  </body>
+</html>
