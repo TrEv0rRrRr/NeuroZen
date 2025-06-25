@@ -364,7 +364,7 @@ a {
 /* Forms */
 
 .seccion-login {
-  background-image: url(../../img/Galeria/seis.jpg);
+  background-image: url(../assets/images/Galeria/seis.jpg);
   background-size: cover;
   height: 100vh;
   opacity: 75%;
