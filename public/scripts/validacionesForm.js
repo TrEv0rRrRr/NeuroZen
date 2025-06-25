@@ -1,17 +1,22 @@
+const obtenerUsuario = (usuario) => usuario.substring(0, usuario.indexOf("@"));
+
+const enfocarYSeleccionar = (elemento) => {
+  elemento.focus();
+  elemento.select();
+};
+
 function validarFormIngreso() {
   let correoAct = document.getElementById("correo");
   let passwordAct = document.getElementById("password");
   if (correoAct.value === "") {
     alert("Debe de proporcionar un email");
-    correoAct.focus();
-    correoAct.select();
+    enfocarYSeleccionar(correoAct);
     return false;
   }
 
   if (passwordAct.value.length < 8) {
     alert("Debe de proporcionar una contraseña de al menos de 8 caracteres");
-    passwordAct.focus();
-    passwordAct.select();
+    enfocarYSeleccionar(passwordAct);
     return false;
   }
 
@@ -20,7 +25,7 @@ function validarFormIngreso() {
 
 function ingresoUsuario() {
   if (validarFormIngreso()) {
-    fetch("../js/usuarios.json")
+    fetch("scripts/usuarios.json")
       .then((response) => response.json())
       .then((value) => {
         const correoAct = document.getElementById("correo").value;
@@ -41,8 +46,7 @@ function ingresoUsuario() {
           return;
         }
 
-        window.location.href =
-          "../index.html?user=" + correoAct.substring(0, correoAct.indexOf("@"));
+        window.location.href = "index.html?user=" + obtenerUsuario(correoAct);
       });
   }
 }
@@ -58,8 +62,7 @@ function validarFormRegistro() {
     confirmarPasswordAct.value !== passwordAct.value
   ) {
     alert("Su contraseña debe de coincidir");
-    confirmarPasswordAct.focus();
-    confirmarPasswordAct.select();
+    enfocarYSeleccionar(confirmarPasswordAct);
     return false;
   }
 
@@ -69,8 +72,7 @@ function validarFormRegistro() {
 function registroUsuario() {
   if (validarFormRegistro()) {
     alert("Se registró correctamente");
-    let correoAct = document.getElementById("correo").value;
-    window.location.href =
-      "../index.html?user=" + correoAct.substring(0, correoAct.indexOf("@"));
+    const correoAct = document.getElementById("correo").value;
+    window.location.href = "index.html?user=" + obtenerUsuario(correoAct);
   }
 }

@@ -1,32 +1,32 @@
 const PSICOLOGOS = [
   {
     name: "Pierina Almandroz",
-    img: "./img/Psicologos/Pierina.png",
+    img: "./assets/images/Psicologos/Pierina.png",
     desciption:
       "Acompaña procesos terapéuticos centrados en el presente y la conciencia emocional. Ideal para quienes buscan reducir el estrés desde un enfoque integral.",
     title: "Dra",
   },
   {
     name: "Henry Mendoza",
-    img: "./img/Psicologos/Henry.png",
+    img: "./assets/images/Psicologos/Henry.png",
     desciption:
       "Especialista en terapia cognitivo-conductual con más de 10 años de experiencia. Ayuda a adultos a gestionar la ansiedad, depresión y conflictos personales.",
   },
   {
     name: "Santiago Ventura",
-    img: "./img/Psicologos/Santiago.png",
+    img: "./assets/images/Psicologos/Santiago.png",
     desciption:
       "Psicólogo con enfoque humanista. Te acompaña en procesos de crecimiento personal, crisis emocionales, manejo del estrés y autoestima.",
   },
   {
     name: "Joaquin Del Solar",
-    img: "./img/Psicologos/Joaquin.png",
+    img: "./assets/images/Psicologos/Joaquin.png",
     desciption:
       "Amplia experiencia trabajando con niños, adolescentes y familias. Ayuda a reducir el estrés escolar, mejorar la conducta y fortalecer los vínculos familiares.",
   },
   {
     name: "Nuria Castro",
-    img: "./img/Psicologos/Nuria.png",
+    img: "./assets/images/Psicologos/Nuria.png",
     desciption:
       "Psicóloga clínica con enfoque cognitivo-conductual. Te ayuda a identificar y transformar los pensamientos que generan estrés, promoviendo hábitos de autocuidado y bienestar emocional.",
     title: "Dra",

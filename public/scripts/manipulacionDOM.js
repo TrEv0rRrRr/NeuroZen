@@ -10,7 +10,7 @@ function obtenerElementoAUsar() {
     const anchor = document.createElement("a");
 
     anchor.className = "boton-verde";
-    anchor.href = "./pages/ingreso.html";
+    anchor.href = "ingreso.html";
     anchor.text = "Ingresar";
 
     return anchor;
@@ -20,7 +20,7 @@ function obtenerElementoAUsar() {
     button.textContent = `Usuario: ${params["?user"]}`;
 
     let image = document.createElement("img");
-    image.src = "./img/perfil.png";
+    image.src = "assets/images/Principales/perfil.png";
     image.className = "imagen-avatar";
     image.alt = `Usuario: ${params["?user"]}`;
 
